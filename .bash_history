@@ -1,21 +1,3 @@
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/pt_TL.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/qu.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/qu_BO.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/qu_EC.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/quz.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/quz_PE.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/raj.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/raj_IN.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/rm.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/rn.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/ro.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/ro_MD.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/ro_RO.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/rof.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/ru.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/ru_BY.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/ru_KG.php
- create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/ru_KZ.php
  create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/ru_MD.php
  create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/ru_RU.php
  create mode 100644 .composer/vendor/nesbot/carbon/src/Carbon/Lang/ru_UA.php
@@ -1998,3 +1980,21 @@ vagrant@homestead:~$
 heroku buildpacks:set heroku/php
 
 
+heroku create
+echo web: vendor/bin/heroku-php-apache2 public/ > Procfile
+git add -A
+git commit -m "Procfile for Heroku"
+git push
+heroku buildpacks:set heroku/php
+heroku create
+echo web: vendor/bin/heroku-php-apache2 public/ > Procfile
+git add -A
+git commit -m "Procfile for Heroku"
+git push
+heroku buildpacks:set heroku/php
+echo web: vendor/bin/heroku-php-apache2 public/ > Procfile
+git add -A
+git commit -m "Procfile for Heroku"
+git push
+php artisan key:generate --show
+heroku buildpacks:set heroku/php
