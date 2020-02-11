@@ -43,3 +43,12 @@ Manually visit https://quiet-refuge-09702.herokuapp.com/ in your browser.
     at /usr/lib/heroku/node_modules/heroku-client/lib/request.js:148:16
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
 2020/02/11 04:10:47 {"id":"invalid_params","message":"You've reached the limit of 5 apps for unverified accounts. Delete some apps or add a credit card to verify your account."}
+2020-02-11T04:11:50.472Z Error: Missing required flag:
+2020-02-11T04:11:50.472Z  -a, --app APP  app to run command against
+2020-02-11T04:11:50.472Z See more help with --help
+2020-02-11T04:11:50.472Z     at validateFlags (/usr/lib/heroku/node_modules/@oclif/parser/lib/validate.js:53:27)
+2020-02-11T04:11:50.472Z     at Object.validate (/usr/lib/heroku/node_modules/@oclif/parser/lib/validate.js:58:5)
+2020-02-11T04:11:50.472Z     at Object.parse (/usr/lib/heroku/node_modules/@oclif/parser/lib/index.js:26:7)
+2020-02-11T04:11:50.472Z     at Set.parse (/usr/lib/heroku/node_modules/@oclif/command/lib/command.js:83:41)
+2020-02-11T04:11:50.472Z     at Set.run (/usr/lib/heroku/node_modules/@heroku-cli/plugin-buildpacks/lib/commands/buildpacks/set.js:7:36)
+2020-02-11T04:11:50.472Z     at Set._run (/usr/lib/heroku/node_modules/@oclif/command/lib/command.js:44:31)
