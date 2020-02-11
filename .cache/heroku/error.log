@@ -52,3 +52,6 @@ Manually visit https://quiet-refuge-09702.herokuapp.com/ in your browser.
 2020-02-11T04:11:50.472Z     at Set.parse (/usr/lib/heroku/node_modules/@oclif/command/lib/command.js:83:41)
 2020-02-11T04:11:50.472Z     at Set.run (/usr/lib/heroku/node_modules/@heroku-cli/plugin-buildpacks/lib/commands/buildpacks/set.js:7:36)
 2020-02-11T04:11:50.472Z     at Set._run (/usr/lib/heroku/node_modules/@oclif/command/lib/command.js:44:31)
+2020-02-11T05:34:25.710Z Error: Couldn't find that app.
+2020-02-11T05:34:25.710Z Error ID: not_found
+2020-02-11T05:34:25.710Z     at Function.request (/usr/lib/heroku/node_modules/@heroku-cli/command/lib/api-client.js:93:27)
